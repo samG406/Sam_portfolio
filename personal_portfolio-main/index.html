@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Sambhavi Portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <h1>SAMBHAVI GAJULA&nbsp;&nbsp;&nbsp;</h1>
+          <ul class="navigation show">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="burger-menu" id="burger-menu">
+             <ion-icon class="bars" name="menu-outline"></ion-icon>
+          </button>
+    </nav>
+    <!-- Intro Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/wfh_1.svg"
+        alt="picture"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX ">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hello! 🙋‍♀️
+          My name is Sambhavi Gajula.
+          I'm a CS grad student who strives for excellence and loves in-depth research on a range of issues.
+        </p>
+      </div>
+</section>
+    <!-- More about section-->
+
+<section class="more-about">
+  <h2>About Me</h2>
+  <p id="greeting"></p> <!-- Dynamic greeting will be inserted here by JavaScript -->
+  
+  <p>
+    Hi, I'm <strong>Sambhavi Gajula</strong>, a passionate <mark>Computer Science</mark> graduate 
+    who <em>thrives on problem-solving</em> and innovative solutions. 
+    I have a keen interest in <abbr title="Artificial Intelligence">AI</abbr> and 
+    <abbr title="Machine Learning">ML</abbr>, and I enjoy working on modern web technologies.
+  </p>
+
+  <p>
+    I participated in <strong>Hackathons</strong> like <mark>Hack Diva</mark> conducted by Accenture 
+    & have solved numerous coding challenges on platforms such as 
+    <abbr title="An interactive platform to learn coding">Free Code Camp</abbr>, 
+    <abbr title="Online coding courses">Codecademy</abbr>, and <abbr title="Competitive coding site">HackerRank</abbr>.
+    These platforms not only rewarded me with badges and certifications 
+    but also strengthened my competitive programming skills.
+  </p>
+</section>
+
+<!-- JavaScript for Dynamic Greeting -->
+<script>
+  const greetings = [
+    "Welcome to my portfolio! Let's build something amazing together. 🚀",
+    "Hi there! I'm passionate about tech and always eager to learn new things. 😊",
+    "Hello! I'm a problem solver at heart. Let's innovate together! 💡"
+  ];
+
+  document.getElementById("greeting").textContent = greetings[Math.floor(Math.random() * greetings.length)];
+</script>
+ 
+<!-- Work Experience Section -->
+<section class="experience" id="experience">
+  <h2>Work Experience</h2>
+  
+  <div class="job-entry">
+    <h3>Front-End Developer, Rhabdom Solutions</h3>
+    <p><strong>Duration:</strong> 05/2023 – 08/2023 | <strong>Location:</strong> Remote</p>
+    <details>
+      <summary>Responsibilities</summary>
+      <ul>
+        <li>Developed reusable components using React.js for client-facing dashboards.</li>
+        <li>Integrated RESTful APIs for real-time data fetching from external services.</li>
+        <li>Collaborated with UX/UI designers to enhance mobile responsiveness and accessibility.</li>
+        <li>Optimized page performance using lazy loading and code splitting techniques.</li>
+        <li>Managed state with Redux, ensuring predictable transitions in complex user interactions.</li>
+        <li>Utilized GitHub for version control and collaborated effectively using branching strategies.</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="job-entry">
+    <h3>Software Engineer, BigLeap Technologies & Solutions</h3>
+    <p><strong>Duration:</strong> 08/2022 - 03/2023 | <strong>Location:</strong> Hyderabad</p>
+    <details>
+      <summary>Responsibilities</summary>
+      <ul>
+        <li>Built dynamic web applications with Django and React.js for the backend and frontend.</li>
+        <li>Designed PostgreSQL databases and optimized queries for fast performance.</li>
+        <li>Implemented JWT-based authentication for secure data access and role-based controls.</li>
+        <li>Developed RESTful APIs for frontend and third-party integrations.</li>
+        <li>Automated deployment with AWS EC2 and Docker containers, improving CI/CD pipelines.</li>
+        <li>Collaborated with product managers to align solutions with business goals.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section class="education" id="education">
+  <h2>Education</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Graduation Date</th>
+        <th>GPA</th>
+        <th>Achievements</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Master's in Computer Science</td>
+        <td>Long Island University</td>
+        <td>08/2025</td>
+        <td>3.4</td>
+        <td>Focus on Machine Learning & Deep Learning</td>
+      </tr>
+      <tr>
+        <td>Bachelor's in Electronics and Communications Engineering</td>
+        <td>Jawaharlal Nehru Technological University, Kakinada</td>
+        <td>07/2022</td>
+        <td>3</td>
+        <td>Graduated with Honors</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="education-button" onclick="sortByGPA()">Sort by GPA</button>
+</section>
+
+<script>
+  // Sorting function for Education GPA
+  function sortByGPA() {
+    const table = document.getElementById("education-table");
+    const rows = Array.from(table.rows).slice(1);
+    rows.sort((rowA, rowB) => {
+      const gpaA = parseFloat(rowA.cells[3].textContent);
+      const gpaB = parseFloat(rowB.cells[3].textContent);
+      return gpaB - gpaA;
+    });
+    rows.forEach(row => table.appendChild(row));
+  }
+</script>
+
+
+<!-- Skills Section -->
+<section class="skills" id="skills">
+  <h2 class="skill-header">My Top Skills</h2>
+
+
+  <div class="skill-toggle">
+    <button class="skill-btn" data-level="beginner">Beginner</button>
+    <button class="skill-btn" data-level="intermediate">Intermediate</button>
+    <button class="skill-btn" data-level="advanced">Advanced</button>
+  </div>
+
+
+  <fieldset class="skill-category">
+    <legend>Frontend Development</legend>
+    <div class="skill-item">
+      <label for="html-skill">HTML:</label>
+      <progress id="html-skill" value="90" max="100" class="skill-bar"></progress>
+    </div>
+    <div class="skill-item">
+      <label for="css-skill">CSS:</label>
+      <progress id="css-skill" value="85" max="100" class="skill-bar"></progress>
+    </div>
+    <div class="skill-item">
+      <label for="js-skill">JavaScript:</label>
+      <progress id="js-skill" value="75" max="100" class="skill-bar"></progress>
+    </div>
+  </fieldset>
+
+  <fieldset class="skill-category">
+    <legend>Backend Development</legend>
+    <div class="skill-item">
+      <label for="node-skill">Node.js:</label>
+      <progress id="node-skill" value="70" max="100" class="skill-bar"></progress>
+    </div>
+    <div class="skill-item">
+      <label for="python-skill">Python:</label>
+      <progress id="python-skill" value="60" max="100" class="skill-bar"></progress>
+    </div>
+  </fieldset>
+</section>
+
+
+
+
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/simple_calculator.png"
+            alt="calculator"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Simple calculator</h3>
+          <p class="project-details">
+            The central aim of the project was to test the hypothesis that providing so-called calculator.
+            This project does the basic calculations such as addition, subtraction, multiplication, and division. 
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/netflixClone.png"
+            alt="netflix-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+             ➔ Created a Responsive webpage of Netflix landing page.
+             This project is designed to gain more hands on experience with Html, CSS & JS.
+             So, I created a clone of it
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/Survey_form.png"
+            alt="survey_form"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Survey Form</h3>
+          <p class="project-details">
+            In general, a survey is the process of collecting, analysing and interpreting data from many individuals.
+            It aims to determine insights about a group of people. However in this Survey form 
+          </p>
+          <a href="https://samg406.github.io/Survey_form/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications or Achievements Section -->
+<section class="achievements" id="achievements">
+  <h2>Certifications & Achievements</h2>
+  <dl class="certification-list">
+    <dt class="highlighted-certification">
+      <span class="badge">⭐</span> Certified Full-Stack Developer
+    </dt>
+    <dd>Issued by Coursera, completed in 2023.</dd>
+
+    <dt>Winner of Accenture Hack Diva</dt>
+    <dd>Secured first place in a national-level hackathon.</dd>
+
+    <dt>Certified in Machine Learning</dt>
+    <dd>Completed a course on ML fundamentals on Coursera.</dd>
+  </dl>
+</section>
+
+
+<!-- Interests or Hobbies Section -->
+<section class="hobbies" id="hobbies">
+  <h2>My Interests & Hobbies</h2>
+  <div class="hobby-gallery">
+    <figure class="hobby-item" data-hobby="Listening to Music">
+      <img src="assets/images/music.jpg" alt="Listening to music" class="hobby-img" />
+      <figcaption>Listening to Music</figcaption>
+    </figure>
+
+    <figure class="hobby-item" data-hobby="Traveling">
+      <img src="assets/images/travel.jpg" alt="Traveling" class="hobby-img" />
+      <figcaption>Traveling</figcaption>
+    </figure>
+
+    <figure class="hobby-item" data-hobby="Reading">
+      <img src="assets/images/reading.jpg" alt="Photography" class="hobby-img" />
+      <figcaption>Reading</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Modal Popup for Hobby Details -->
+<div id="hobby-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <p id="hobby-detail-text"></p>
+  </div>
+</div>
+
+
+
+
+
+      <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Drop A Message To Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="mailto:gajulasambhavi@gmail.com" autocomplete="on" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
+    <script src="app.js"></script>
+    <!-- Ion-Icon scripts-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+  </body>
+</html>
