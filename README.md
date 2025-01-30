@@ -1,7 +1,7 @@
 # portfolio
 This repository contains the source code for my personal portfolio website.The website showcases my skills, projects, and achievements,
 providing an overview of my professional experience and expertise.
-This is the [link] [(https://samg406.github.io/personal_portfolio/)] to the Github repo of the project
+This is the [(https://samg406.github.io/personal_portfolio/)] to the Github repo of the project
 
 ## Folder Structure
 
@@ -13,7 +13,6 @@ The assets folder contains all the images and icons used, in their respective fo
 Below are are list of tools used, and the precise things were used for:
 
 - [Ion Icons](https://ionic.io/ionicons) for menu bar
-- [Icon8](https://icons8.com/) for animated icons and skills icons
 - [Animate CSS](https://animate.style/) for  bio text animation
 
 ## Technologies Used
@@ -34,11 +33,20 @@ For deploying the website online, I used a hosting service of github called GitH
 Home section:
 It incorporates My Name with a Picture & Brief Introduction
 
+About me:
+A brief introduction describing who I am, highlighting my background, strengths, and key aspirations.
+
+Experience section:
+This section provides a detailed overview of my professional experience, including roles & responsibilities
+
 Skills Section:
 This section contains information about my skills and achievements
 
 Projects section:
-I showcased my projects with detailed description, project name & screenshots.
+I showcased my web designing projects with detailed description, project name & screenshots.
+
+Hobbies section:
+This section contains my hobbies
 
 Contact sections:
 Connect with me via email or through the website's contact form.
