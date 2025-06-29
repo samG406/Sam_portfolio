@@ -1,7 +1,7 @@
 # portfolio
 This repository contains the source code for my personal portfolio website.The website showcases my skills, projects, and achievements,
 providing an overview of my professional experience and expertise.
-This is the (https://samg406.github.io/Sam_portfolio/) to the Github repo of the project
+This is the (https://sambhavig.netlify.app/) to the Github repo of the project
 
 ## Folder Structure
 
