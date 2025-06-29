@@ -28,6 +28,7 @@
           </button>
     </nav>
     <!-- Intro Section -->
+    <main>
     <section class="hero" id="about">
       <img
         src="assets/images/wfh_1.svg"
@@ -43,171 +44,165 @@
           I'm a CS grad student who strives for excellence and loves in-depth research on a range of issues.
         </p>
       </div>
-</section>
+    </section>
     <!-- More about section-->
 
-<section class="more-about">
-  <h2>About Me</h2>
-  <p id="greeting"></p> <!-- Dynamic greeting will be inserted here by JavaScript -->
-  
-  <p>
-    Hi, I'm <strong>Sambhavi Gajula</strong>, a passionate <mark>Computer Science</mark> graduate 
-    who <em>thrives on problem-solving</em> and innovative solutions. 
-    I have a keen interest in <abbr title="Artificial Intelligence">AI</abbr> and 
-    <abbr title="Machine Learning">ML</abbr>, and I enjoy working on modern web technologies.
-  </p>
+    <section class="more-about">
+    <h2>About Me</h2>
+    <p id="greeting"></p> <!-- Dynamic greeting will be inserted here by JavaScript -->
 
-  <p>
-    I participated in <strong>Hackathons</strong> like <mark>Hack Diva</mark> conducted by Accenture 
-    & have solved numerous coding challenges on platforms such as 
-    <abbr title="An interactive platform to learn coding">Free Code Camp</abbr>, 
-    <abbr title="Online coding courses">Codecademy</abbr>, and <abbr title="Competitive coding site">HackerRank</abbr>.
-    These platforms not only rewarded me with badges and certifications 
-    but also strengthened my competitive programming skills.
-  </p>
-</section>
+    <p>
+      Hi, I'm <strong>Sambhavi Gajula</strong>, a passionate <mark>Computer Science</mark> graduate 
+      who <em>thrives on problem-solving</em> and innovative solutions. 
+      I have a keen interest in <abbr title="Artificial Intelligence">AI</abbr> and I enjoy working on modern web technologies.
+    </p>
+
+    <p>
+      I participated in <strong>Hackathons</strong> like <mark>Hack Diva</mark> conducted by Accenture 
+      & have solved numerous coding challenges on platforms such as 
+      <abbr title="An interactive platform to learn coding">Free Code Camp</abbr>, 
+      <abbr title="Online coding courses">Codecademy</abbr>, and <abbr title="Competitive coding site">HackerRank</abbr>.
+      These platforms not only rewarded me with badges and certifications 
+      but also strengthened my competitive programming skills.
+    </p>
+    </section>
 
 <!-- JavaScript for Dynamic Greeting -->
-<script>
-  const greetings = [
-    "Welcome to my portfolio! Let's build something amazing together. ",
-    "Hi there! I'm passionate about tech and always eager to learn new things. ",
-    "Hello! I'm a problem solver at heart. Let's innovate together! "
-  ];
+    <script>
+      const greetings = [
+        "Welcome to my portfolio! Let's build something amazing together. ",
+        "Hi there! I'm passionate about tech and always eager to learn new things. ",
+        "Hello! I'm a problem solver at heart. Let's innovate together! "
+      ];
 
-  document.getElementById("greeting").textContent = greetings[Math.floor(Math.random() * greetings.length)];
-</script>
+      document.getElementById("greeting").textContent = greetings[Math.floor(Math.random() * greetings.length)];
+    </script>
  
-<!-- Work Experience Section -->
-<section class="experience" id="experience">
-  <h2>Work Experience</h2>
-  
-  <div class="job-entry">
-    <h3>Front-End Developer, Rhabdom Solutions</h3>
-    <p><strong>Duration:</strong> 05/2023 – 08/2023 | <strong>Location:</strong> Remote</p>
-    <details>
-      <summary>Responsibilities</summary>
-      <ul>
-        <li>Developed reusable components using React.js for client-facing dashboards.</li>
-        <li>Integrated RESTful APIs for real-time data fetching from external services.</li>
-        <li>Collaborated with UX/UI designers to enhance mobile responsiveness and accessibility.</li>
-        <li>Optimized page performance using lazy loading and code splitting techniques.</li>
-        <li>Managed state with Redux, ensuring predictable transitions in complex user interactions.</li>
-        <li>Utilized GitHub for version control and collaborated effectively using branching strategies.</li>
-      </ul>
-    </details>
-  </div>
+  <!-- Work Experience Section -->
+    <section class="experience" id="experience">
+      <h2>Work Experience</h2>
+      
+        <div class="job-entry">
+          <h3>Front-End Developer, Rhabdom Solutions</h3>
+          <p><strong>Duration:</strong> 05/2023 – 08/2023 | <strong>Location:</strong> Remote</p>
+          <details>
+            <summary>Responsibilities</summary>
+            <ul>
+              <li>Played a key role in developing the company’s official website [rhabdom.com], focusing on performance optimization, SEO implementation, and enhancing user experience through responsive UI design.</li>
+              <li>Designed and developed interactive, user-friendly interfaces using HTML, CSS, JavaScript, Bootstrap, and WordPress.</li>
+              <li>Applied front-end best practices to ensure cross-browser compatibility and fast load times.</li>
+              <li>Familiarity with domain-specific challenges in supply chain workflows and logistics.</li>
+              <li>Collaborated remotely with a cross-functional team to design, build, and deploy web solutions tailored to client needs.</li>
+              <li>Utilized GitHub for version control and collaborated effectively using branching strategies.</li>
+            </ul>
+          </details>
+        </div>
 
-  <div class="job-entry">
-    <h3>Software Engineer, BigLeap Technologies & Solutions</h3>
-    <p><strong>Duration:</strong> 08/2022 - 03/2023 | <strong>Location:</strong> Hyderabad</p>
-    <details>
-      <summary>Responsibilities</summary>
-      <ul>
-        <li>Built dynamic web applications with Django and React.js for the backend and frontend.</li>
-        <li>Designed PostgreSQL databases and optimized queries for fast performance.</li>
-        <li>Implemented JWT-based authentication for secure data access and role-based controls.</li>
-        <li>Developed RESTful APIs for frontend and third-party integrations.</li>
-        <li>Automated deployment with AWS EC2 and Docker containers, improving CI/CD pipelines.</li>
-        <li>Collaborated with product managers to align solutions with business goals.</li>
-      </ul>
-    </details>
-  </div>
-</section>
+        <div class="job-entry">
+          <h3>Software Engineer, BigLeap Technologies & Solutions</h3>
+          <p><strong>Duration:</strong> 08/2022 - 03/2023 | <strong>Location:</strong> Hyderabad</p>
+          <details>
+            <summary>Responsibilities</summary>
+            <ul>
+              <li>Built dynamic web applications with Django and React.js for the backend and frontend.</li>
+              <li>Designed PostgreSQL databases and optimized queries for fast performance.</li>
+              <li>Implemented JWT-based authentication for secure data access and role-based controls.</li>
+              <li>Developed RESTful APIs for frontend and third-party integrations.</li>
+              <li>Automated deployment with AWS EC2 and Docker containers, improving CI/CD pipelines.</li>
+              <li>Collaborated with product managers to align solutions with business goals.</li>
+            </ul>
+          </details>
+        </div>
+    </section>
 
-<!-- Education Section -->
-<section class="education" id="education">
-  <h2>Education</h2>
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Degree</th>
-        <th>Institution</th>
-        <th>Graduation Date</th>
-        <th>GPA</th>
-        <th>Achievements</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Master's in Computer Science</td>
-        <td>Long Island University</td>
-        <td>08/2025</td>
-        <td>3.4</td>
-        <td>Focus on Machine Learning & Deep Learning</td>
-      </tr>
-      <tr>
-        <td>Bachelor's in Electronics and Communications Engineering</td>
-        <td>Jawaharlal Nehru Technological University, Kakinada</td>
-        <td>07/2022</td>
-        <td>3</td>
-        <td>Graduated with Honors</td>
-      </tr>
-    </tbody>
-  </table>
-  <button class="education-button" onclick="sortByGPA()">Sort by GPA</button>
-</section>
+  <!-- Education Section -->
+    <section class="education" id="education">
+      <h2>Education</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Graduation Date</th>
+            <th>GPA</th>
+            <th>Achievements</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Master's in Computer Science</td>
+            <td>Long Island University</td>
+            <td>08/2025</td>
+            <td>3.4</td>
+          </tr>
+          <tr>
+            <td>Bachelor's in Electronics and Communications Engineering</td>
+            <td>Jawaharlal Nehru Technological University, Kakinada</td>
+            <td>07/2022</td>
+            <td>3</td>
+            <td>Graduated with Honors</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="education-button" onclick="sortByGPA()">Sort by GPA</button>
+    </section>
 
-<script>
-  // Sorting function for Education GPA
-  function sortByGPA() {
-    const table = document.getElementById("education-table");
-    const rows = Array.from(table.rows).slice(1);
-    rows.sort((rowA, rowB) => {
-      const gpaA = parseFloat(rowA.cells[3].textContent);
-      const gpaB = parseFloat(rowB.cells[3].textContent);
-      return gpaB - gpaA;
-    });
-    rows.forEach(row => table.appendChild(row));
-  }
-</script>
-
-
-<!-- Skills Section -->
-<section class="skills" id="skills">
-  <h2 class="skill-header">My Top Skills</h2>
+    <script>
+      // Sorting function for Education GPA
+      function sortByGPA() {
+        const table = document.getElementById("education-table");
+        const rows = Array.from(table.rows).slice(1);
+        rows.sort((rowA, rowB) => {
+          const gpaA = parseFloat(rowA.cells[3].textContent);
+          const gpaB = parseFloat(rowB.cells[3].textContent);
+          return gpaB - gpaA;
+        });
+        rows.forEach(row => table.appendChild(row));
+      }
+    </script>
 
 
-  <div class="skill-toggle">
-    <button class="skill-btn" data-level="beginner">Beginner</button>
-    <button class="skill-btn" data-level="intermediate">Intermediate</button>
-    <button class="skill-btn" data-level="advanced">Advanced</button>
-  </div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
 
 
-  <fieldset class="skill-category">
-    <legend>Frontend Development</legend>
-    <div class="skill-item">
-      <label for="html-skill">HTML:</label>
-      <progress id="html-skill" value="90" max="100" class="skill-bar"></progress>
-    </div>
-    <div class="skill-item">
-      <label for="css-skill">CSS:</label>
-      <progress id="css-skill" value="85" max="100" class="skill-bar"></progress>
-    </div>
-    <div class="skill-item">
-      <label for="js-skill">JavaScript:</label>
-      <progress id="js-skill" value="75" max="100" class="skill-bar"></progress>
-    </div>
-  </fieldset>
-
-  <fieldset class="skill-category">
-    <legend>Backend Development</legend>
-    <div class="skill-item">
-      <label for="node-skill">Node.js:</label>
-      <progress id="node-skill" value="70" max="100" class="skill-bar"></progress>
-    </div>
-    <div class="skill-item">
-      <label for="python-skill">Python:</label>
-      <progress id="python-skill" value="60" max="100" class="skill-bar"></progress>
-    </div>
-  </fieldset>
-</section>
+      <div class="skill-toggle">
+        <button class="skill-btn" data-level="beginner">Beginner</button>
+        <button class="skill-btn" data-level="intermediate">Intermediate</button>
+        <button class="skill-btn" data-level="advanced">Advanced</button>
+      </div>
 
 
+      <fieldset class="skill-category">
+        <legend>Frontend Development</legend>
+        <div class="skill-item">
+          <label for="html-skill">HTML:</label>
+          <progress id="html-skill" value="90" max="100" class="skill-bar"></progress>
+        </div>
+        <div class="skill-item">
+          <label for="css-skill">CSS:</label>
+          <progress id="css-skill" value="85" max="100" class="skill-bar"></progress>
+        </div>
+        <div class="skill-item">
+          <label for="js-skill">JavaScript:</label>
+          <progress id="js-skill" value="75" max="100" class="skill-bar"></progress>
+        </div>
+      </fieldset>
 
-
+      <fieldset class="skill-category">
+        <legend>Backend Development</legend>
+        <div class="skill-item">
+          <label for="node-skill">Node.js:</label>
+          <progress id="node-skill" value="70" max="100" class="skill-bar"></progress>
+        </div>
+        <div class="skill-item">
+          <label for="python-skill">Python:</label>
+          <progress id="python-skill" value="60" max="100" class="skill-bar"></progress>
+        </div>
+      </fieldset>
+    </section>
 
     <!-- Projects section -->
     <section class="projects" id="projects">
@@ -215,15 +210,15 @@
       <div class="projects-container">
         <div class="project-container project-card">
           <img
-            src="assets/images/simple_calculator.png"
-            alt="calculator"
+            src="assets/images/smartCare.png"
+            alt="smartCare"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Simple calculator</h3>
+          <h3 class="project-title">SmartCare</h3>
           <p class="project-details">
-            The central aim of the project was to test the hypothesis that providing so-called calculator.
-            This project does the basic calculations such as addition, subtraction, multiplication, and division. 
+            SmartHealthcare is a secure, AI-powered healthcare management system designed for patients, doctors, hospitals, and researchers.
+            It enables seamless patient-doctor interactions, regulatory compliance (HIPAA/GDPR). 
           </p>
           <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
@@ -244,71 +239,68 @@
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/Survey_form.png"
-            alt="survey_form"
+            src="assets/images/calculator.png"
+            alt="Calculator"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Survey Form</h3>
+          <h3 class="project-title">Calculator</h3>
           <p class="project-details">
-            In general, a survey is the process of collecting, analysing and interpreting data from many individuals.
-            It aims to determine insights about a group of people. However in this Survey form 
+            See hover states for all interactive elements on the page 
+            See a live countdown timer that ticks down every second (start the count at 14 days)
+            When a number changes, make the card flip from the middle
           </p>
-          <a href="https://samg406.github.io/Survey_form/" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://frontend-calculator.netlify.app/" target="_blank" class="project-link">Check it Out</a>
         </div>
       </div>
     </section>
 
-    <!-- Certifications or Achievements Section -->
-<section class="achievements" id="achievements">
-  <h2>Certifications & Achievements</h2>
-  <dl class="certification-list">
-    <dt class="highlighted-certification">
-      <span class="badge">⭐</span> Certified Full-Stack Developer
-    </dt>
-    <dd>Issued by Coursera, completed in 2023.</dd>
+        <!-- Certifications or Achievements Section -->
+    <section class="achievements" id="achievements">
+      <h2>Certifications & Achievements</h2>
+      <dl class="certification-list">
+        <dt class="highlighted-certification">
+          <span class="badge">⭐</span> Certified Web Developer
+        </dt>
+        <dd>Issued by Meta from Coursera, completed in 2023.</dd>
 
-    <dt>Winner of Accenture Hack Diva</dt>
-    <dd>Secured first place in a national-level hackathon.</dd>
+        <dt>Winner of Accenture Hack Diva</dt>
+        <dd>Secured first place in a national-level hackathon.</dd>
 
-    <dt>Certified in Machine Learning</dt>
-    <dd>Completed a course on ML fundamentals on Coursera.</dd>
-  </dl>
-</section>
+        <dt>Certified in Legacy JavaScript Data structures and Algorithms</dt>
+        <dd>Completed a course on ML fundamentals on Coursera.</dd>
+      </dl>
+    </section>
 
 
 <!-- Interests or Hobbies Section -->
-<section class="hobbies" id="hobbies">
-  <h2>My Interests & Hobbies</h2>
-  <div class="hobby-gallery">
-    <figure class="hobby-item" data-hobby="Listening to Music">
-      <img src="assets/images/music.jpg" alt="Listening to music" class="hobby-img" />
-      <figcaption>Listening to Music</figcaption>
-    </figure>
+    <section class="hobbies" id="hobbies">
+      <h2>My Interests</h2>
+      <div class="hobby-gallery">
+        <figure class="hobby-item" data-hobby="Building AI workflows">
+          <img src="assets/images/workflow.png" alt="Ai workflow" class="hobby-img" />
+          <figcaption>Building AI workflows</figcaption>
+        </figure>
 
-    <figure class="hobby-item" data-hobby="Traveling">
-      <img src="assets/images/travel.jpg" alt="Traveling" class="hobby-img" />
-      <figcaption>Traveling</figcaption>
-    </figure>
+        <figure class="hobby-item" data-hobby="Traveling">
+          <img src="assets/images/Designing.png" alt="Designing" class="hobby-img" />
+          <figcaption>designing</figcaption>
+        </figure>
 
-    <figure class="hobby-item" data-hobby="Reading">
-      <img src="assets/images/reading.jpg" alt="Photography" class="hobby-img" />
-      <figcaption>Reading</figcaption>
-    </figure>
-  </div>
-</section>
+        <figure class="hobby-item" data-hobby="Reading">
+          <img src="assets/images/learning.png" alt="Photography" class="hobby-img" />
+          <figcaption>Learning trends</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<!-- Modal Popup for Hobby Details -->
-<div id="hobby-modal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <p id="hobby-detail-text"></p>
-  </div>
-</div>
-
-
-
-
+    <!-- Modal Popup for Hobby Details -->
+    <div id="hobby-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p id="hobby-detail-text"></p>
+      </div>
+    </div>
 
       <!-- Contact section -->
     <section class="contact" id="contact">
@@ -360,7 +352,7 @@
         </div>
       </div>
     </section>
-
+    </main>
     
     <i class="scroll-up" id="scroll-up"
       ><img

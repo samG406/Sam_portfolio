@@ -13,6 +13,7 @@
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
+  --container-width: 620px;
   --transition: 0.3s;
 }
 
@@ -43,6 +44,12 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  margin: 0;
+  padding: 0 8px;
+  min-height: 100vh;
+  width: auto;
+  max-width: 100%;
+  background: var(--bg-color);
 }
 
 nav {
@@ -99,15 +106,20 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .bio {
-  width: 25rem;
+  width: 100%;
+  max-width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  margin: 0 auto;
 }
 
 .bio h1 {
@@ -442,6 +454,9 @@ button:hover {
   text-align: center;
 }
 
+.hobbies h2 {
+  margin-bottom: 25px;
+}
 .hobby-gallery {
   display: flex;
   gap: 1.5rem;
@@ -588,9 +603,16 @@ button:hover {
   margin: 10px;
 }
 
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 @media screen and (max-width: 720px) {
   nav {
     padding: 1.5rem 1rem;
+    
   }
   nav ul {
     position: fixed;
@@ -598,7 +620,7 @@ button:hover {
     flex-direction: column;
     top: 86px;
     left: 10%;
-    width: 80%;
+    width: 70%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
@@ -617,32 +639,29 @@ button:hover {
   }
 
   .hero {
-    margin-top: -4rem;
+    margin-top: 0rem;
     flex-direction: column;
+    align-items: center;
     gap: 0;
+    
   }
 
-  .bio {
-    margin-top: -7rem;
-    width: 20.5rem;
+  .container {
+    padding: 0 0.5rem;
   }
-
+  .more-about,
+  .education,
+  .experience {
+    padding: 1rem;
+  }
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
-
-  .more-about {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
-  }
-
-  .more-about h2 {
-    text-align: center;
-  }
-
-  .more-about p {
-    text-align: justify;
+  .bio {
+    max-width: 20.5rem;
+    width: 100%;
   }
 
   .icon {
@@ -664,13 +683,22 @@ button:hover {
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
+  .container {
+    padding: 0 0.25rem;
   }
-
+  .more-about,
+  .education,
+  .experience {
+    padding: 0.5rem;
+  }
+  .hero img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
   .bio {
-    width: 18.3rem;
+    max-width: 18.3rem;
+    width: 100%;
   }
 
   .project-container {
